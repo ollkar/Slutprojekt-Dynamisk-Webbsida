@@ -1,0 +1,363 @@
+
+/* RESET */
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+
+/* VARIABLER */
+:root{
+    --primary: #1C1C1C;
+    --secondary: #114084;
+    --lighter-primary: #808080;
+    --lighter-secondary: #3466AA;
+}
+
+
+
+/* BASIC STYLING */
+
+h1,h2,h3,h4{
+    color: var(--lighter-secondary);
+    font-weight: normal;
+}
+
+h1,h3{
+    font-size: 1.2em;
+}
+
+h2{
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+
+h4{
+    font-size: 1.1em;
+}
+
+.leading{
+    font-size: 1.1em;
+}
+
+
+
+
+body{
+    background-color: var(--primary);
+}
+
+#welcome .button{
+    background: none;
+    border: 2px solid var(--secondary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+#welcome .button:hover {
+    background-color: var(--lighter-secondary); 
+}
+input,textarea{
+    background: rgba(255,255,255,0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--lighter-primary);
+    color: white;
+}
+
+
+/* MOBIL STYLING */
+#nav-ul{
+    display: none;
+    height: 220px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   margin: -50px 15px -50px 15px;
+
+}
+.nav-ul li a{
+   display: block;
+   margin: 0px 15px 15px 15px;
+   text-align: center;
+}
+.hamburger{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../bilder/hamburger-menu.png);
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+} 
+ul {
+    width: 100%;
+  }
+
+li a:hover{
+    color: var(--secondary);
+}
+
+
+
+
+
+
+/* Välkommen styling */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+#welcome{
+    padding: 0 20px 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.welcome-text{
+  grid-column: 1/8;
+ 
+}
+.welcome-text a{
+    margin: 20px 0;
+}
+#welcome img{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    z-index: -5000;
+    grid-column: 6/9;
+    opacity: 0.7;
+}
+
+
+
+
+
+/* EAT TRAIN SLEEP styling */
+#img-section{
+    padding: 30px 20px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+.images div{
+    grid-column: 1/9;
+    margin: 20px 0;
+}
+#img-section img{
+   height: 200px;
+   width: 100%;
+}  
+#img-section h4{
+    font-size: 100px;
+    
+}
+.eat{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -210%);
+}
+.train{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -210%);
+}
+.sleep{
+    position:  absolute;
+    left: 50%;
+    transform: translate(-50%, -210%);
+}
+.project-img{
+    filter: blur(1px);
+    -webkit-filter: blur(2px);
+}
+
+
+
+/* om oss styling */
+#about{
+    padding: 30px 20px;
+
+}
+#about ul{
+    margin: 40px 0;
+}
+
+#about li{
+ padding: 10px;
+ grid-column: 1/9;
+ text-align: center;
+}
+#about .sponsors{
+    border: 2px solid var(--lighter-primary);
+    text-align: center;
+}
+#about h2{
+    text-align: center;
+}
+.sponsors img{
+    width: 200px;
+    margin: 10px;
+}
+#about a{
+    margin: 20px 0;
+}
+
+
+
+
+
+/* träningsprogram styling */
+#training h2{
+    text-align: center;
+}
+#training h4{
+    padding-top: 30px;
+}
+#training p{
+    padding: 20px 30px 0 30px;
+}
+.training1, .training2, .training3{
+    grid-column: 1/9;
+    text-align: center;
+}
+#training img{
+    height: 350px;
+    
+}
+#training{
+    background-color: black;
+    padding-top: 50px;
+}
+#training .training-button{
+    background: none;
+    border: 2px solid var(--secondary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6); 
+    grid-column: 4/6;
+    text-align: center;
+    margin-top: 10px;
+}
+.training-button{
+    margin-bottom: 50px;
+}
+#training .training-button:hover{
+   background-color: var(--lighter-secondary);
+}
+
+
+
+
+
+/* kontakt förmulär styling */
+#contact{
+    padding: 30px 20px;
+
+}
+#contact h2, #contact  p{
+    text-align: center;
+    margin-bottom: 0;
+}
+#contact form{
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}   
+#contact input, #contact textarea{
+    width: 100%;
+    margin: 10px 0;
+}
+#contact .contact-button{
+    margin-top: 10px;
+    background: none;
+    border: 2px solid var(--secondary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6); 
+    grid-column: 4/6;
+    text-align: center;
+}
+#contact .contact-button:hover {
+    background-color: var(--lighter-secondary);
+}
+
+
+
+/* footer styling */
+footer{
+    padding: 30px 20px;
+    background-image: url(../bilder/708929-200.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+footer .copyright{
+    grid-column: 1/3;
+    font-size: 0.8em;
+    color: var(--lighter-primary);
+}
+
+footer .socials{
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-end;
+}
+footer li{
+    margin: 0 6px;
+}
+footer img{
+    width: 20px;
+}
+
+
+
+
+
+/* SMÅ TABLETS */
+@media screen and (min-width: 620px){
+
+   #welcome{
+       background-color: yellow;
+   }
+   
+   
+}
+
+/* STORA TABLETS OCH LAPTOPS */
+@media screen and (min-width: 960px){
+
+body{
+    font-size: 18px;
+}
+    
+}
+
+/* STORA DESKTOP SKÄRMAR */
+@media screen and (min-width: 1200px){
+
+    body{
+        font-size: 20px;
+    }
+    
+}
+
+
