@@ -84,7 +84,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-   margin: -50px 15px -50px 15px;
+    margin: -50px 15px -50px 15px;
 
 }
 .nav-ul li a{
@@ -226,6 +226,8 @@ li a:hover{
 }
 #training h4{
     padding-top: 30px;
+    grid-column: 1/9;
+    text-align: center;
 }
 #training p{
     padding: 20px 30px 0 30px;
@@ -335,20 +337,179 @@ footer img{
 /* SMÅ TABLETS */
 @media screen and (min-width: 620px){
 
-   #welcome{
-       background-color: black;
-   }
-   
-   
+    .images div{ 
+    grid-column: 2/8;
+    }
+
+    footer{
+        background-size: 15%;
+    }
+  
 }
 
 /* STORA TABLETS OCH LAPTOPS */
 @media screen and (min-width: 960px){
 
+/* basic styling */
 body{
-    font-size: 18px;
+    font-size: 18px; 
 }
+
+
+/* nav bar styling */
+nav{
+    margin: -35px 10px -45px 10px;
+    justify-content: space-between;
+}
+#nav-ul{
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+nav button {
+    display: none;
+}
+
+
+
+/* welcome styling */
+#welcome{
+    height: 600px;
+}
+#welcome img{
+    height: 70%;
+}
+.welcome-text{
+    grid-column: 1/4;
+    align-self: center;
+}
+
+
+/* eat train sleep styling */
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+#img-section h4{
+    position: static;
+    transform: translate(0,-210%);
+}
+#img-section{
+    height: 240px;
+}
+.images div{ 
+   width: 300px;
+}
+ 
+  
+/* om oss styling */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+#about{
+    margin-bottom: 40px;
+}
+#about li{
+    float: left;
+    width: 35%;
+    margin-top: 40px;
+}
+.sponsors img{
+    width: 200px;
+}
+.sponsors{
+    float: right;
+    width: 60%;
+    margin-top: 50px;
+}
+
+
+/* training styling*/
+#training{
+   
     
+}
+#training h2{
+    /*
+    text-align: center;
+    */
+}
+#training h4{
+    /* 
+    padding-top: 30px;
+    */ 
+}
+#training p{/* 
+    padding: 20px 30px 0 30px;
+    */
+   
+}
+#training li{
+   
+ display: flex;
+ padding: 50px 30px 0px 60px;
+
+}
+
+.training1, .training2, .training3{
+    /* 
+    grid-column: 1/9;
+    text-align: center;
+    */
+   border: 1px solid yellow;
+   display: flex;
+}
+#training img{/* 
+    height: 350px;
+    */
+   order: 2;
+   height: 500px;
+}
+#training{/* 
+    background-color: black;
+    padding-top: 50px;
+    */
+}
+#training .training-button{/* 
+    background: none;
+    border: 2px solid var(--secondary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6); 
+    grid-column: 4/6;
+    text-align: center;
+    margin-top: 10px;
+    */
+    margin: 0;
+    padding: 0;
+    
+}
+.training-button{/* 
+    margin-bottom: 50px;
+    */
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer styling */
+footer{
+    background-size: 8%;
+}
+
 }
 
 /* STORA DESKTOP SKÄRMAR */
