@@ -428,86 +428,39 @@ nav button {
 
 
 /* training styling*/
-#training{
-   
-    
-}
 #training h2{
-    /*
-    text-align: center;
-    */
+    padding-bottom: 60px;
 }
 #training h4{
-    /* 
-    padding-top: 30px;
-    */ 
+    padding: 0;
 }
-#training p{/* 
-    padding: 20px 30px 0 30px;
-    */
-   
+#training p{
+   padding: 0 80px 0 80px;
 }
 #training li{
-   
- display: flex;
- padding: 50px 30px 0px 60px;
-
+ 
+ padding-bottom: 30px;
+ text-align: center;
 }
-
 .training1, .training2, .training3{
-    /* 
-    grid-column: 1/9;
-    text-align: center;
-    */
-   border: 1px solid yellow;
    display: flex;
 }
-#training img{/* 
-    height: 350px;
-    */
-   order: 2;
+#training img{
    height: 500px;
 }
-#training{/* 
-    background-color: black;
-    padding-top: 50px;
-    */
+.training2 img{
+   order: 1;
 }
-#training .training-button{/* 
-    background: none;
-    border: 2px solid var(--secondary);
-    color: white;
-    padding: 6px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6); 
-    grid-column: 4/6;
-    text-align: center;
-    margin-top: 10px;
-    */
-    margin: 0;
-    padding: 0;
-    
+#training .training-button{
+   padding: 2px 2px;
+   border-radius: 10px;
+   text-transform: none;
 }
-.training-button{/* 
-    margin-bottom: 50px;
-    */
-    margin:0;
-}
-
-
-
-
-
-
-
-
-
 
 
 /* footer styling */
 footer{
-    background-size: 8%;
+    background-size: 6%;
 }
 
 }
@@ -515,10 +468,49 @@ footer{
 /* STORA DESKTOP SKÄRMAR */
 @media screen and (min-width: 1200px){
 
+
+    /* simpel styling */
     body{
         font-size: 20px;
     }
-    
+
+  /* welcome styling */
+#welcome{
+    height: 800px;
+}
+#welcome img{
+    height: 100%;
+}
+.welcome-text{
+    grid-column: 1/5;
+    font-size: 25px;
+}
+
+
+/* eat train sleep styling */
+.images{
+    gap: 250px;
+}
+.images div{ 
+   width: 300px;
+}
+
+
+/* om oss styling */
+#about li{
+    width: 46%;
+}
+.sponsors img{
+    width: 260px;
+}
+.sponsors{
+    width: 50%;
+}
+
+/* footer styling */
+footer{
+    background-size: 5%;
+}   
 }
 
 
