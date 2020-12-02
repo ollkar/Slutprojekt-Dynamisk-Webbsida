@@ -73,7 +73,26 @@ input,textarea{
     color: white;
 }
 
+#topbutton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-image: url(../bilder/toppng.com-up-arrow-top-image-png-white-392x241.png);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  width: 50px;
+  }
 
+
+
+  
 /* MOBIL STYLING */
 #nav-ul{
     display: none;
@@ -262,6 +281,18 @@ li a:hover{
 #training .training-button:hover{
    background-color: var(--lighter-secondary);
 }
+#training h4{
+    margin-top: -15px;
+}
+#training li{
+    margin-top: 10px;
+}
+#training ul{
+   margin-bottom: 15px;
+}
+.training1, .training2, .training3{
+    margin-bottom: 60px;
+}
 
 
 
@@ -337,12 +368,48 @@ footer img{
 /* SMÅ TABLETS */
 @media screen and (min-width: 620px){
 
+
+     /* välkommen styling */
+     #welcome{
+        height: 400px;
+    }
+    #welcome img{
+        height: 50%;
+    }
+    .welcome-text{
+        align-self: center;
+    }
+
+
+     /* eat train sleep styling*/
     .images div{ 
     grid-column: 2/8;
     }
+    #img-section img{
+         width: 450px;
+    }
+    
 
+    /* training styling */
+    #training h4{
+        margin-top: -15px;
+    }
+    #training li{
+        margin-top: 10px;
+    }
+    #training ul{
+       margin-bottom: 15px;
+    }
+    #training img{
+         margin-top: 40px;
+    }
+    .training3{
+        margin-bottom: 60px;
+    }
+
+    /* footer styling */
     footer{
-        background-size: 15%;
+        background-size: 12%;
     }
   
 }
@@ -381,7 +448,6 @@ nav button {
 }
 .welcome-text{
     grid-column: 1/4;
-    align-self: center;
 }
 
 
@@ -460,7 +526,7 @@ nav button {
 
 /* footer styling */
 footer{
-    background-size: 6%;
+    background-size: 8%;
 }
 
 }
@@ -506,6 +572,15 @@ footer{
 .sponsors{
     width: 50%;
 }
+
+/* training styling*/
+.training-text{
+    margin-top: 80px;
+}
+.training1, .training2, .training3{
+    margin-bottom: 0;
+}
+
 
 /* footer styling */
 footer{
