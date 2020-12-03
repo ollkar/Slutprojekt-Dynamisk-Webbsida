@@ -22,36 +22,30 @@ li{
 
 
 /* BASIC STYLING */
-
 h1,h2,h3,h4{
     color: var(--lighter-secondary);
     font-weight: normal;
 }
-
 h1,h3{
     font-size: 1.2em;
 }
-
 h2{
     font-size: 1.6em;
     text-decoration: underline;
 }
-
 h4{
     font-size: 1.1em;
 }
-
 .leading{
     font-size: 1.1em;
 }
-
-
-
-
 body{
     background-color: var(--primary);
 }
-
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
 #welcome .button{
     background: none;
     border: 2px solid var(--secondary);
@@ -72,7 +66,6 @@ input,textarea{
     border: 2px solid var(--lighter-primary);
     color: white;
 }
-
 #topbutton {
   display: none;
   position: fixed;
@@ -94,6 +87,9 @@ input,textarea{
 
   
 /* MOBIL STYLING */
+
+
+/* nav meny styling */
 #nav-ul{
     display: none;
     height: 220px;
@@ -136,10 +132,6 @@ li a:hover{
 
 
 /* Välkommen styling */
-.grid{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
 #welcome{
     padding: 0 20px 0 20px;
     background: rgba(0, 0, 0, 0.5);
