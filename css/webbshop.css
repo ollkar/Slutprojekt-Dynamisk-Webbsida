@@ -80,6 +80,65 @@ li a:hover{
     color: var(--secondary);
 }
 
+
+/* searchbar and background image styling */
+#title-section{
+  position: relative;
+  text-align: center;
+}
+#title-section img{
+  width: 100%;
+  opacity: 0.2;
+}
+
+#title-section h2{
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+
+/* kategori styling */
+#categories{
+  position: relative;
+}
+#categories button{
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--lighter-secondary);
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 20px;
+}
+#categories a{
+  font-size: 12px;
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  border: 1px solid var(--lighter-secondary);
+  border-radius: 50%;        
+  background: transparent;
+  display: block;
+  padding-top: 28px;
+}
+#categories a:hover{
+  background-color: var(--secondary);
+}
+.active{
+  color: var(--secondary);
+}
+
+
+
 /* sort by styling */
 
 .sort-list{
@@ -97,31 +156,43 @@ li a:hover{
     text-decoration: none;
     display: block;
 }
-.show {display: block;}
-
+.show {
+  display: block;
+}
 .sort-button {
 	background-color: var(--secondary);
 	color: white;
 	padding: 6px;
 	font-size: 12px;
 	border: none;
-	cursor: pointer;
+  cursor: pointer;
   }
 
 
 
-
-
-
-
-
 /* card styling */
-
 .card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 	padding: 16px;
 	text-align: center;
-	background-color: var(--lighter-secondary);
+  background-color: var(--secondary);
+  }
+  .card p{
+    background-color: var(--secondary);
+    text-shadow: 0.5px 0.5px black;
+  }
+  .card a{
+    padding: 5px;
+    width: 50px;
+  }
+  .card a:hover{
+     color: var(--secondary);
+  }
+  .card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
 .column {
 	float: left;
@@ -138,14 +209,14 @@ li a:hover{
     clear: both;
     display: table;
   }
+ .card img{
+   width: 100%;
+   background-color: white;
+   height: 180px;
+ }
 
 
-
-
-
-
-
-
+ 
 /* footer styling */
 footer{
 	padding: 30px 20px;
