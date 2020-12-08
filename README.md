@@ -1,5 +1,5 @@
 
-*** WEBSITE LINK ***
+*** WEBSITE LÄNK ***
 
 http://ollesunekarlsson.se/
 
