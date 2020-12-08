@@ -174,7 +174,7 @@ li a:hover{
 }  
 #img-section h4{
     font-size: 100px;
-    
+    text-shadow: 2px 2px black;
 }
 .eat{
     position: absolute;
@@ -192,8 +192,7 @@ li a:hover{
     transform: translate(-50%, -210%);
 }
 .project-img{
-    filter: blur(1px);
-    -webkit-filter: blur(2px);
+    opacity: 0.3;
 }
 
 
@@ -447,7 +446,7 @@ nav button {
 .images{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 0;
 }
 #img-section h4{
     position: static;
@@ -457,7 +456,7 @@ nav button {
     height: 240px;
 }
 .images div{ 
-   width: 300px;
+   width: 100%;
 }
  
   
@@ -547,10 +546,13 @@ footer{
 
 /* eat train sleep styling */
 .images{
-    gap: 250px;
+    gap: 0;
 }
 .images div{ 
-   width: 300px;
+   width: 100%;
+}
+#img-section h4{
+    transform: translate(0,-210%);
 }
 
 
