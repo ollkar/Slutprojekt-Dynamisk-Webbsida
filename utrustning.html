@@ -5,10 +5,13 @@
     <link rel="stylesheet" href="css/webbshop.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
     <script src="main.js"></script>
-    <script src="search.js"></script>
+    <script src="sort.js"></script>
+    <script src="scrollfunction.js"></script>
     <title>Gymatics Webbshop</title>
 </head>
 <body>
+
+  <button onclick="topFunction()" id="topbutton"></button>
 
     <nav class="top-nav-bar" id="home">
         <img src="bilder/f02a1b10-a711-4cc4-9470-9fa210ffae31_200x200.png" alt="logga">
@@ -31,7 +34,7 @@
 </section>
 
 <section id="categories">
-  <div class="button-container">
+  <div class="a-container">
     <div>
       <a href="webbshop.html">Allt</a>
     </div>
@@ -49,7 +52,7 @@
 
 
 
-<div>
+<div id="sort-container">
     <button onclick="showSortList()" class="sort-button">Sortera På:</button>
     <div id="sortBy" class="sort-list">
         <a href="">Mest populär</a>
@@ -60,10 +63,8 @@
 
 
 
-    <section>
+    <section id="products">
           <div class="row">
-              
-            
               <div class="column">
                 <div class="card">
                   <img src="bilder/1095-01_-_star_gear_fitness_band_red_2080_x_13mm.png" alt="">
@@ -84,21 +85,20 @@
                 </div>
                 </div>
               </div>
+              <div class="column">
+                <div class="card">
+                  <img src="bilder/GG4002-BLK_Gymgrossisten_shaker-600ml_april20.png" alt="">
+                  <h3>Shakercup</h3>
+                  <div class="card-text">
+                  <p>19 Kr</p>
+                  <a href="">Köp</a>
+                </div>
+                </div>
               </div>
-                <div class="row">
-                    <div class="column">
-                      <div class="card">
-                        <img src="bilder/GG4002-BLK_Gymgrossisten_shaker-600ml_april20.png" alt="">
-                        <h3>Shakercup</h3>
-                        <div class="card-text">
-                        <p>19 Kr</p>
-                        <a href="">Köp</a>
-                      </div>
-                      </div>
-                    </div>
-                    </div>
+              </div>
+                
 </section> 
-
+<hr>
 
 
         <footer>
