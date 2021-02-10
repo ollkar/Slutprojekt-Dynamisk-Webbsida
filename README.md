@@ -1,7 +1,7 @@
 
 *** WEBSITE LÄNK ***
 
-peaceful-turing-da0a8f.netlify.app
+https://peaceful-turing-da0a8f.netlify.app/
 
 
 
